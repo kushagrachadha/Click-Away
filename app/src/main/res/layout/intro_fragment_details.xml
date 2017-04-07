@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nottoworry.clickaway.IntroFragmentDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5e75dc">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listen/Record an Emergency Message"
+                android:layout_centerHorizontal="true"
+                android:textSize="29sp"
+                android:padding="6dp"
+                android:gravity="center"
+
+                android:textStyle="bold"
+                android:id="@+id/helpsoundtext"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:background="#3753d1"
+                android:layout_below="@+id/helpsoundtext"
+                android:id="@+id/playHelpIntro"
+                android:onClick="playHelpSound"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Record New"
+                android:background="#3753d1"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/helpsoundtext"
+                android:id="@+id/recordHelpIntro"
+                android:onClick="recordHelpSound"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your emergency contacts:"
+                android:layout_below="@+id/recordHelpIntro"
+                android:textSize="29sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="19dp"
+                android:id="@+id/intro_conatcst"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:text="1st"
+                android:id="@+id/contact1"
+                android:background="#3753d1"
+                android:layout_marginLeft="24dp"
+                android:layout_below="@id/intro_conatcst"
+                android:textSize="15sp"
+                android:layout_marginTop="29dp"
+                android:onClick="contact1"/>
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:text="2nd"
+                android:id="@+id/contact2"
+                android:background="#3753d1"
+                android:layout_below="@id/intro_conatcst"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="24dp"
+                android:textSize="15sp"
+                android:layout_marginTop="29dp"
+                android:onClick="contact2"/>
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:text="3rd"
+                android:id="@+id/contact3"
+                android:layout_marginLeft="24dp"
+                android:textSize="15sp"
+                android:background="#3753d1"
+                android:layout_below="@id/contact1"
+                android:layout_marginTop="29dp"
+                android:onClick="contact3"/>
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:text="4th"
+                android:background="#3753d1"
+                android:id="@+id/contact4"
+                android:textSize="15sp"
+                android:layout_marginRight="24dp"
+                android:layout_below="@id/contact2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="29dp"
+                android:onClick="contact4"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

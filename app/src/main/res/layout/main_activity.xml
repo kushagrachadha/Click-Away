@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#d7ccc8"
+    tools:context="nottoworry.clickaway.MainActivity">
+
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="125dp"
+        android:text="Hospitals"
+        android:textSize="23sp"
+        android:padding="16dp"
+        android:onClick="hospitalsBtn"
+        android:background="#c0ca33"
+        android:id="@+id/mainBtnHospitals"
+        android:layout_alignTop="@+id/mainBtnBloodBank"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="125dp"
+        android:text="Drug Store"
+        android:textSize="18sp"
+        android:background="#00e676"
+        android:padding="16dp"
+        android:id="@+id/mainBtnChemist"
+        android:onClick="chemistBtn"
+        android:layout_alignTop="@+id/mainBtnEmergency"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:text="HELP!"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textColor="#FFF"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#d50000"
+        android:textSize="80sp"
+        android:onClick="helpMeBtn"
+        android:id="@+id/mainBtnHelpMe"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="125dp"
+        android:text="SOS"
+        android:textSize="27sp"
+        android:background="#e040fb"
+        android:padding="16dp"
+        android:onClick="emergencyBtn"
+        android:id="@+id/mainBtnEmergency"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="125dp"
+        android:text="Blood Bank"
+        android:textSize="18sp"
+        android:background="#7986cb"
+        android:padding="16dp"
+        android:id="@+id/mainBtnBloodBank"
+        android:onClick="bloodBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
